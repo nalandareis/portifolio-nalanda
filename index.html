@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalanda Reis Barbosa | Portfólio</title>
+  
+  <!-- Importação de fontes personalizadas do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Ligação com o ficheiro CSS separado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+    
+    <!-- COLUNA ESQUERDA: PERFIL E HABILIDADES -->
+    <aside class="sidebar">
+      
+      <!-- Cartão de Perfil -->
+      <div class="profile-card">
+        <!-- Substituir 'minha_ilustracao.png' pelo nome do ficheiro da tua imagem -->
+        <img src="minha_ilustracao.png" alt="Ilustração Nalanda" class="avatar-img">
+        <h1>NALANDA REIS</h1>
+        <p class="subtitle">QA ANALYST | PYTHON DEVELOPER</p>
+        
+        <!-- Links Sociais -->
+        <div class="social-links">
+          <a href="https://github.com/nalandareis" target="_blank" class="btn-social">GitHub</a>
+          <a href="https://www.linkedin.com/in/nalandareis/" target="_blank" class="btn-social">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Secção de Habilidades (Skills) -->
+      <div class="skills-section">
+        <h2>SKILLS</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-badge">🧪</span>
+            <span>PLAYWRIGHT</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-badge">🐍</span>
+            <span>PYTHON</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-badge">⚡</span>
+            <span>FASTAPI</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-badge">🌐</span>
+            <span>HTML/JS</span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- COLUNA DIREITA: PROJETOS E CONTACTO -->
+    <main class="main-content">
+      
+      <!-- Secção de Projetos -->
+      <section>
+        <h2 class="section-title">MEUS PROJETOS</h2>
+        <div class="projects-grid">
+          
+          <!-- Cartão de Projeto 1 -->
+          <div class="project-card">
+            <div>
+              <h3>Automação E2E Playwright</h3>
+              <p>Suíte de testes funcionais e exploratórios desenvolvida para validação automatizada de aplicações Web e Mobile.</p>
+            </div>
+            <a href="https://github.com/nalandareis" target="_blank" class="btn-action">VER CÓDIGO</a>
+          </div>
+
+          <!-- Cartão de Projeto 2 -->
+          <div class="project-card">
+            <div>
+              <h3>API Transacional FastAPI</h3>
+              <p>Aplicação back-end em Python para identificação e análise de transações e comportamentos suspeitos.</p>
+            </div>
+            <a href="https://github.com/nalandareis" target="_blank" class="btn-action">VER CÓDIGO</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Secção de Contacto -->
+      <section class="contact-section">
+        <h2 class="section-title">CONTACTO</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <input type="text" id="userName" placeholder="SEU NOME" required>
+            <input type="email" id="userEmail" placeholder="SEU EMAIL" required>
+          </div>
+          <textarea id="userMessage" placeholder="SUA MENSAGEM" required></textarea>
+          <button type="submit" class="btn-action">ENVIAR MENSAGEM</button>
+        </form>
+        <!-- Caixas de mensagem de feedback via JS -->
+        <div id="feedbackMessage" class="feedback-msg"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Ligação com o ficheiro JavaScript separado -->
+  <script src="script.js"></script>
+</body>
+</html>
